@@ -1,6 +1,124 @@
 body {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:16px;
-    color: green;
+    color: rgb(6, 29, 29);
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgb(252, 246, 233);
 
+}
+.main-heading {
+    color: darkcyan;
+    text-align: center;
+}
+
+.description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(255, 251, 246);
+}
+
+.ingredients{
+  width: min(300px, 92vw);   /* <- card width (narrower), responsive */
+  margin: 20px auto;         /* <- centers the card */
+  padding: 24px 32px;        /* <- gives breathing room inside */
+  background: rgb(255, 251, 246);
+  border-radius: 15px;
+}
+
+.steps {
+  max-width: 700px;      
+  margin: 0 auto;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(255, 251, 246);       
+}
+
+.steps :is(h2, h3) {
+  text-align: center;
+}
+
+.steps ol {
+  padding-left: 1.5rem; 
+}
+
+.steps li {
+  text-align: left;     
+  margin-bottom: 0.5rem;
+}
+
+img {
+    display: block;
+    width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    align-items: center;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.spacer {
+margin-top: 30px;
+}
+
+.home-button {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 30px;
+  text-align:center;
+  padding: 10px 30px 10px;
+  background: darkcyan;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.home-button:hover {
+  background: #555;
+}
+
+.recipe-index img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+}
+
+.recipe-index p {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (max-width:700px) {
+    img {
+        width:70%;
+        height: auto;
+    }
+}
+
+@media (max-width:700px) {
+    .steps {
+        width:70%;
+        height: auto;
+    }
 }
