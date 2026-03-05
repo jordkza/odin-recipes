@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin Recipes</title>
 </head>
 <body>
-<h1 class="main-heading">Odin Recipes</h1>
-<section class="recipe-index">
-    <img src="https://images.unsplash.com/photo-1635327173758-85badf17f995?q=80&w=827&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <p><a href="recipes/german-cheesecake.html">The Best Cheesecake</a></p>
-    <img src="https://images.unsplash.com/photo-1694168949272-cd0f0209c5b7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <p><a href="recipes/chocolate-whisky-cake.html">Decadent Chocolate Whisky Cake</a></p>
-    <img src="https://images.unsplash.com/photo-1612709863954-9850629dbc55?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <p><a href="recipes/apple-spice-cake.html">Golden Spiced Apple Cake</a></p>
-</section>
+
+  <header class="site-header">
+    <h1 class="site-title">Odin Recipes</h1>
+    <p class="site-tagline">Handcrafted recipes worth making</p>
+  </header>
+
+  <main class="page-wrapper">
+    <div class="recipe-grid">
+
+      <article class="recipe-card">
+        <div class="recipe-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1635327173758-85badf17f995?q=80&w=827&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+               alt="Slice of German cheesecake on a green plate">
+        </div>
+        <div class="recipe-card__body">
+          <h2 class="recipe-card__title">The Best Cheesecake</h2>
+          <a class="recipe-card__link" href="recipes/german-cheesecake.html">View Recipe</a>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1694168949272-cd0f0209c5b7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+               alt="Decadent chocolate whisky celebration cake">
+        </div>
+        <div class="recipe-card__body">
+          <h2 class="recipe-card__title">Decadent Chocolate Whisky Cake</h2>
+          <a class="recipe-card__link" href="recipes/chocolate-whisky-cake.html">View Recipe</a>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1612709863954-9850629dbc55?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+               alt="Golden spiced apple cake on a tea towel">
+        </div>
+        <div class="recipe-card__body">
+          <h2 class="recipe-card__title">Golden Spiced Apple Cake</h2>
+          <a class="recipe-card__link" href="recipes/apple-spice-cake.html">View Recipe</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
 </body>
 </html>
